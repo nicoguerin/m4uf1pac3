@@ -1,0 +1,45 @@
+.titolPagina {
+    text-align: center;
+}
+
+.contPrincipal {
+    text-align: center;
+    padding: 1vw;
+    display: table;
+    margin: 0 auto;
+}
+
+.contPrincipal img, .contPrincipal aside {
+    float: left;
+    margin-bottom: 2vh;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.contPrincipal img {
+    width: 40vw;
+    height: auto;
+}
+
+.contPrincipal aside {
+    padding: 25px;
+    width: 25vw;
+    color: white;
+    background-color: #354259;
+    margin-left: 8vw;
+}
+
+.contPrincipal aside a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.contPrincipal aside a:hover {
+    text-decoration: 2px underline;
+}
+
+footer {
+    clear: both;
+}
