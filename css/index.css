@@ -49,3 +49,40 @@
 .contPrincipal aside a:hover {
     text-decoration: 2px underline;
 }
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .contPrincipal {
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .contPrincipal img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contPrincipal aside {
+        height: 200%;
+        width: 30vw;
+    }
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .contPrincipal img {
+        width: 80%;
+        height: auto;
+    }
+}
