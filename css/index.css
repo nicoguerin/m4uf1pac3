@@ -74,8 +74,8 @@
     }
 
     .contPrincipal aside {
-        height: 200%;
-        width: 30vw;
+        width: 40%;
+        font-size: 19px;
     }
 }
  
@@ -84,5 +84,11 @@
     .contPrincipal img {
         width: 80%;
         height: auto;
+    }
+
+    .contPrincipal aside {
+        /* margin-right: 1rem; */
+        width: 35%;
+        font-size: 18px;
     }
 }

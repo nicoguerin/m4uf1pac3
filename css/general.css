@@ -10,6 +10,11 @@ section {
     align-items: center;
 }
 
+#section1 ul {
+    padding: 0;
+}
+
+
 .actors, .directors {
     /* text-align: center; */
     display: inline-block;
