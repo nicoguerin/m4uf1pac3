@@ -1,35 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
-* {
-    font-family: 'DM Sans', sans-serif;
-}
-
 html, body {
     width: 100%;
     height: 100%;
 }
 
 body {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
     background-color: #ECE5C7;
+    font-family: 'DM Sans', sans-serif;
 }
 
 header {
-    background-color: #354259;
-    position: fixed;
-    top: 0;
-    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* width: 100vw; */
     text-align: center;
-    z-index: 2;
+    /* z-index: 2; */
+    
+}
+
+header, nav {
+    background-color: #354259;
     border-bottom: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .logoCF {
-    width: 10vw;
-    height: auto;
-    margin-top: 10px;
+    height: 85%;
+    width: auto;
+    /* margin-top: 10px; */
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
@@ -37,7 +41,7 @@ header {
 .llistaNav {
     list-style: none;
     display: inline-block;
-    padding: 0px 10px 5px 10px;
+    /* padding: 0px 10px 5px 10px; */
 }
 
 .linkNav {
@@ -54,24 +58,26 @@ header {
 
 
 main, footer {
-    position: relative;
-    top: 22vh;
+    /* position: relative;
+    top: 22vh; */
 }
 
 main {
     text-align: center;
-    padding: 20px;
-    margin: 10px;
+    /* padding: 20px; */
+    /* width: 100vw; */
+    /* margin: 10px; */
+    margin-bottom: 1rem;
 }
 
 .titolPagina{
-    font-size: 1.75em;
+    font-size: 1.35em;
     text-transform: uppercase;
     text-align: left;
 }
 
 footer {
-    padding: 0.5em;
+    padding: 0;
     margin: 0;
     text-align: center;
     border-top: 1px solid black;
@@ -80,11 +86,123 @@ footer {
 
 .socialIcon {
     border-radius: 0;
-    height: 1vw;
+    height: 2.5vw;
     width: auto;
 }
 
 .social {
     display: inline-block;
     margin: 0 1rem 0 1rem;
+}
+
+header, nav, footer {
+    height: 14.28vh;
+}
+
+main {
+    height: auto;
+}
+
+
+[class*="col-"] {
+    float: left;
+}
+
+/* Mobile First --> Default columns */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .col-sm-1 {width: 8.33%;}
+  .col-sm-2 {width: 16.66%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-4 {width: 33.33%;}
+  .col-sm-5 {width: 41.66%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-7 {width: 58.33%;}
+  .col-sm-8 {width: 66.66%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-10 {width: 83.33%;}
+  .col-sm-11 {width: 91.66%;}
+  .col-sm-12 {width: 100%;}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+  
+  .socialIcon {
+        height: 1.75vw;
+        width: auto;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+
+    header, nav, footer {
+        height: 14.28vh;
+    }
+
+    header {
+        border: none;
+    }
+    main {
+        height: 71.42vh;
+    }
+
+    .socialIcon {
+        height: 1vw;
+        width: auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .col-xl-1 {width: 8.33%;}
+  .col-xl-2 {width: 16.66%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-4 {width: 33.33%;}
+  .col-xl-5 {width: 41.66%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-7 {width: 58.33%;}
+  .col-xl-8 {width: 66.66%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-10 {width: 83.33%;}
+  .col-xl-11 {width: 91.66%;}
+  .col-xl-12 {width: 100%;}
 }
