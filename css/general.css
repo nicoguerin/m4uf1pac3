@@ -118,9 +118,14 @@ audio {
   
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .imatgeActor, .imatgeDirector {
+    .imatgeActor {
         width: 25vw;
         height: 25vw;
+    }
+
+    .imatgeDirector {
+        width: 22.5vw;
+        height: 22.5vw;
     }
 
     .imgDistribuidores, .imgProductores {
