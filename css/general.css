@@ -3,15 +3,26 @@ main ul li {
     line-height: 2.5rem;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .actors, .directors {
     text-align: center;
     display: inline-block;
-    margin: 0 2vw 2vw 2vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .imatgeActor, .imatgeDirector {
-    width: 20vw;
-    height: 20vw;
+    width: 50vw;
+    height: 50vw;
     object-fit: cover;
     align-items: center;
     border-radius: 15px;
@@ -33,17 +44,23 @@ main ul li {
 }
 
 .imgDistribuidores, .imgProductores {
-    width: 5vw;
+    width: 10vw;
     height: auto;
+}
+
+.trames {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .trama {
     padding: 1vh;
     display: inline-block;
-    width: 25vw;
+    width: 75vw;
     height: auto;
     border-radius: 15px;
-    margin: 0 2vw 0 2vw;
+    margin: 0 2vw 1.5vh 2vw;
     color: white;
     background-color: #354259;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -61,3 +78,43 @@ main ul li {
 .trama:hover .titolTrama {
     text-decoration: 2px underline;
 } 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .imatgeActor, .imatgeDirector {
+        width: 45vw;
+        height: 45vw;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .imatgeActor, .imatgeDirector {
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .trames {
+        flex-direction: row;
+    }
+
+    .trama {
+        width: 30vw;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .imatgeActor, .imatgeDirector {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+ 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .imatgeActor, .imatgeDirector {
+        width: 25vw;
+        height: 25vw;
+    }
+}
