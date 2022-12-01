@@ -86,7 +86,7 @@ footer {
 
 .socialIcon {
     border-radius: 0;
-    height: 2.5vw;
+    height: 2.75vw;
     width: auto;
 }
 
@@ -154,7 +154,7 @@ main {
   .col-md-12 {width: 100%;}
   
   .socialIcon {
-        height: 1.75vw;
+        height: 2vw;
         width: auto;
     }
 }
