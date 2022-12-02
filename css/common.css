@@ -25,12 +25,15 @@ header {
 }
 
 header, nav {
+    position: fixed;
+    z-index: 9999;
     background-color: #354259;
     border-bottom: 2px solid black;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 nav {
+    right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +53,7 @@ nav ul {
 
 .llistaNav {
     list-style: none;
-    display: inline-block;
+    display: block;
     /* padding: 0px 10px 5px 10px; */
 }
 
@@ -68,8 +71,8 @@ nav ul {
 
 
 main, footer {
-    /* position: relative;
-    top: 22vh; */
+    position: relative;
+    top: 14vh;
 }
 
 main {
@@ -96,8 +99,9 @@ footer {
 
 .socialIcon {
     border-radius: 0;
-    height: 2.75vw;
+    height: 3.2vw;
     width: auto;
+    margin-bottom: .75rem;
 }
 
 .social {
@@ -105,11 +109,15 @@ footer {
     margin: 0 1rem 0 1rem;
 }
 
-header, nav, footer {
+header, nav {
     height: 14.28vh;
 }
 
 main {
+    height: auto;
+}
+
+footer {
     height: auto;
 }
 
@@ -195,18 +203,21 @@ main {
     }
 
     nav {
+        top: 14.28vh;
         height: 7vh;
     }
 
     header {
         border: none;
     }
-    main {
+    main, footer {
         height: auto;
+        top: 21.28vh;
     }
 
     .menuNav {
         width: 60%;
+        height: auto;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
