@@ -56,7 +56,7 @@ nav {
 
 .linkNav {
     color: white;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     letter-spacing: 0.1em;
     text-decoration: none;
@@ -71,24 +71,25 @@ input {
 }
 
 .menuNav {
-    /* display: none; */
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 200%;
+    height: 35vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
 
-    position: relative;    
-    transform: translate(100%, 100%);
+    position: absolute;    
+    transform: translate(100%, 70%);
     background-color: #354259;
 
-    border: 0 0 1px 1px solid black;
+    border: 2px solid black;
 
     transition: transform .5s ease-in-out;
+
+    /* opacity: .8; */
 }
 
 input {
@@ -101,7 +102,7 @@ input, label {
 
 label {
     display: block;
-    width: 7.5vw;
+    width: 8vw;
     aspect-ratio: 1;
 }
 
@@ -121,7 +122,7 @@ input:checked ~ label {
 }
 
 input:checked ~ label ~ .menuNav {
-    transform: translate(0%, 100%);
+    transform: translate(0%, 70%);
 }
 
 
@@ -197,12 +198,6 @@ footer {
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 320px) {
-    .llistaNav {
-        display: none;
-    }
-}
-
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .col-sm-1 {width: 8.33%;}
@@ -217,6 +212,12 @@ footer {
   .col-sm-10 {width: 83.33%;}
   .col-sm-11 {width: 91.66%;}
   .col-sm-12 {width: 100%;}
+
+  label {
+    display: block;
+    width: 5vw;
+    aspect-ratio: 1;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -278,11 +279,14 @@ footer {
 
     .menuNav {
         width: 60%;
-        height: 100%;
+        height: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
+
+        transform: translate(0%, 0%);
+        border: none;
     }
 
     .linkNav{
