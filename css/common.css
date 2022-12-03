@@ -87,7 +87,9 @@ input {
 
     border: 2px solid black;
 
-    transition: transform .5s ease-in-out;
+    border-radius: 0 0 .75rem .75rem;
+
+    /* transition: transform .5s ease-in-out; */
 
     /* opacity: .8; */
 }
@@ -287,6 +289,7 @@ footer {
 
         transform: translate(0%, 0%);
         border: none;
+        /* transition: none; */
     }
 
     .linkNav{

@@ -2,6 +2,10 @@ input, label {
     display: none;
 }
 
+#hamb {
+    display: block;
+}
+
 .slide_img img {
     width: 90vw;
     border-radius: 15px;
