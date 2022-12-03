@@ -40,10 +40,6 @@ nav {
     align-items: center;
 }
 
-nav ul {
-    /* display: none; */
-}
-
 .logoCF {
     height: 85%;
     width: auto;
@@ -60,7 +56,7 @@ nav ul {
 
 .linkNav {
     color: white;
-    font-size: 18.5px;
+    font-size: 12px;
     font-weight: bold;
     letter-spacing: 0.1em;
     text-decoration: none;
@@ -70,21 +66,65 @@ nav ul {
     text-decoration: 2px underline;
 }
 
+input {
+    /* display: none; */
+}
+
 .menuNav {
+    /* display: none; */
     padding: 0;
     margin: 0;
     width: 100%;
-    height: 100%;
+    height: 200%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     text-align: center;
+
+    position: relative;    
+    transform: translate(100%, 100%);
+    background-color: #354259;
+
+    border: 0 0 1px 1px solid black;
+
+    transition: transform .5s ease-in-out;
 }
 
-.menuNav a {
-    font-size: 12px;
+input {
+    display: none;
 }
+
+input, label {
+    position: absolute;
+}
+
+label {
+    display: block;
+    width: 7.5vw;
+    aspect-ratio: 1;
+}
+
+label {
+    /* margin-top: 30vh; */
+    /* display: block; */
+    /* background-color: teal; */
+    background-image: url('../img/hamburguer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+input:checked ~ label {
+    background-image: url('../img/closed.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+input:checked ~ label ~ .menuNav {
+    transform: translate(0%, 100%);
+}
+
+
 
 main, footer {
     position: relative;
@@ -245,8 +285,8 @@ footer {
         align-items: center;
     }
 
-    .menuNav a {
-        font-size: 19px;
+    .linkNav{
+        font-size: 18.5px;
     }
 
     .socialIcon {
