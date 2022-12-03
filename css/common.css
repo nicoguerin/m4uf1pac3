@@ -21,7 +21,7 @@ header {
     /* width: 100vw; */
     text-align: center;
     /* z-index: 2; */
-    
+
 }
 
 header, nav {
@@ -35,6 +35,7 @@ header, nav {
 nav {
     right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -69,6 +70,21 @@ nav ul {
     text-decoration: 2px underline;
 }
 
+.menuNav {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.menuNav a {
+    font-size: 12px;
+}
 
 main, footer {
     position: relative;
@@ -215,12 +231,21 @@ footer {
         top: 21.28vh;
     }
 
+    label {
+        display: none;
+    }
+
     .menuNav {
         width: 60%;
-        height: auto;
+        height: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    .menuNav a {
+        font-size: 19px;
     }
 
     .socialIcon {
