@@ -3,43 +3,25 @@ main ul li {
     line-height: 2.5rem;
 }
 
-section {
+section, .actors, .directors, .trames {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
-#section1 ul {
-    padding: 0;
-}
+section, .actors, .directors {align-items: center;}
 
-
-.actors, .directors {
-    /* text-align: center; */
-    display: inline-block;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+#section1 ul {padding: 0;}
 
 .imatgeActor, .imatgeDirector {
     width: 65vw;
-    height: 65vw;
+    aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-.imatgeActor:hover + .textActor, .imatgeDirector:hover + .textDirector  {
-    text-decoration: 2px underline;
-}
+.imatgeActor:hover + .textActor, .imatgeDirector:hover + .textDirector,
+.trama:hover .titolTrama {text-decoration: 2px underline;}
 
-.textActor, .textDirector {
-    display: block;
-    text-align: center;
-}
 
 .distribuidores, .productores {
     display: inline-block;
@@ -51,106 +33,70 @@ section {
     height: auto;
 }
 
-.trames {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.trama {
+    padding: .75rem;
+    width: 75vw;
+    margin-top: 1rem;
+    color: var(--colorFont);
+    background-color: var(--colorSecundari);
 }
 
-.trama {
-    padding: 1vh;
-    display: inline-block;
-    width: 75vw;
-    height: auto;
+.trama, .imatgeActor, .imatgeDirector {
     border-radius: 15px;
-    margin: 0 2vw 1.5vh 2vw;
-    color: white;
-    background-color: #354259;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-.titolTrama {
-    font-size: 25px;
-}
+.titolTrama {font-size: 25px;}
 
 .textTrama {
     font-size: 17px;
     line-height: 1.75rem;
 }
 
-.trama:hover .titolTrama {
-    text-decoration: 2px underline;
-} 
+audio {width: 220px;}
 
-audio {
-    width: 220px;
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-  
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .imatgeActor, .imatgeDirector {
-        width: 35vw;
-        height: 35vw;
-    }
+    .imatgeActor, .imatgeDirector {width: 35vw;}
 
     .imgDistribuidores, .imgProductores {
         width: 8vw;
         height: auto;
     }
 
-    .trames {
-        flex-direction: row;
-    }
+    .trames {flex-direction: row;}
 
     .trama {
+        margin: 0 2vw 0 2vw;
         width: 27.5vw;
     }
 
-    audio {
-        width: 300px;
-    }
+    audio {width: 300px;}
 }
   
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    .imatgeActor {
-        width: 25vw;
-        height: 25vw;
-    }
+    .imatgeActor {width: 25vw;}
 
-    .imatgeDirector {
-        width: 22.5vw;
-        height: 22.5vw;
-    }
+    .imatgeDirector {width: 22.5vw;}
 
     .imgDistribuidores, .imgProductores {
         width: 6vw;
         height: auto;
     }
 
-    .trama {
-        width: 25vw;
-    }
+    .trama {width: 30vw;}
 }
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    .imatgeActor, .imatgeDirector {
-        width: 20vw;
-        height: 20vw;
-    }
+    .imatgeActor, .imatgeDirector {width: 20vw;}
 
     .imgDistribuidores, .imgProductores {
         width: 4.5vw;
         height: auto;
     }
 
-    .trama {
-        width: 22.5vw;
-    }
+    .trama {width: 22.5vw;}
 }

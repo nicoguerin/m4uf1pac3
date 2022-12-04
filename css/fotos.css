@@ -13,36 +13,18 @@ input, label {
     margin-bottom: .5rem;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-
-}
-  
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    
-}
-  
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    input {
-        display: none;
-    }
-
-    label {
-        display: block;
-    }
+    input {display: none;}
+    label {display: block;}
     
     .slide {
         margin: 0 auto;
-        
         position: relative;
         width: 70%;
         height: 0;
         padding-bottom: 38%;
-    
         user-select: none;
-    
         color: white;
         border: solid 3px black;
         border-radius: 15px;
@@ -66,11 +48,9 @@ input, label {
     .prev, .next {
         width: 5%;
         height: 10%;
-    
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-    
         background-color: #1c1c1c;
         cursor: pointer;
         text-align: center;
@@ -109,9 +89,4 @@ input, label {
     #i10:checked~#ten {
         z-index: 1;
     }
-}
- 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
 }
