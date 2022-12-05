@@ -65,9 +65,7 @@ header, nav, .logoCF {
     text-decoration: none;
 }
 
-#pagActiva, .linkNav:hover {
-    text-decoration: 2px underline;
-}
+#pagActiva, .linkNav:hover {text-decoration: 2px underline;}
 
 .menuNav {
     padding: 0;
@@ -149,16 +147,12 @@ footer {
     margin: 0 1rem 0 1rem;
 }
 
-header, nav {
-    height: 14.28vh;
-}
+header, nav {height: 14.28vh;}
 
 main, footer {height: auto;}
 
 
-[class*="col-"] {
-    float: left;
-}
+[class*="col-"] {float: left;}
 
 /* Mobile First --> Default columns */
 .col-1 {width: 8.33%;}
