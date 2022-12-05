@@ -1,10 +1,4 @@
-input, label {
-    display: none;
-}
-
-#hamb {
-    display: block;
-}
+input, label {display: none;}
 
 .slide_img img {
     width: 90vw;

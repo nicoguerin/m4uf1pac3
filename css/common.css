@@ -90,7 +90,7 @@ header, nav, .logoCF {
 
 input {display: none;}
 
-label {
+#hamb {
     position: absolute;
     display: block;
     width: 8vw;
@@ -101,13 +101,13 @@ label {
     background-repeat: no-repeat;
 }
 
-input:checked ~ label {
+input:checked ~ #hamb {
     background-image: url('../img/closed.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-input:checked ~ label ~ .menuNav {
+input:checked ~ #hamb ~ .menuNav {
     transform: translate(0%, 70%);
 }
 
@@ -189,7 +189,7 @@ main, footer {height: auto;}
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
 
-    label {width: 4.5vw;}
+    #hamb {width: 4.5vw;}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -243,7 +243,7 @@ main, footer {height: auto;}
         top: 26.5vh;
     }
 
-    label {display: none;}
+    #hamb {display: none;}
 
     .menuNav {
         width: 60%;
