@@ -25,6 +25,7 @@
     background-color: var(--colorSecundari);
     margin-top: 1rem;
     padding-bottom: 1rem;
+    line-height: 1.5rem;
 }
 
 .contPrincipal aside h2, .contPrincipal aside a {padding: 0 1rem 0 1rem;}
@@ -66,6 +67,6 @@
 
     .contPrincipal aside {
         width: 35%;
-        font-size: 18px;
+        font-size: 19px;
     }
 }

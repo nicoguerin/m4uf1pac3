@@ -53,6 +53,8 @@ section, .actors, .directors {align-items: center;}
     line-height: 1.75rem;
 }
 
+#section7 p {padding: .75rem;}
+
 audio {width: 220px;}
 
 

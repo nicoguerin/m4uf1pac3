@@ -1,5 +1,4 @@
 iframe {
-    display: inline-block;
     height: 40vh;
     width: 90vw;
     border: none;
@@ -7,28 +6,17 @@ iframe {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    
-}
-  
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    iframe {
-        width: 70vw;
-    }
+    iframe {width: 75vw;}
 }
   
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    iframe {
-        width: 40vw;
-    }
+    iframe {width: 45vw;}
 }
  
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-    iframe {
-        width: 35vw;
-    }
+    iframe {width: 38.5vw;}
 }
