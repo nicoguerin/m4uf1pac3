@@ -13,9 +13,7 @@ table {
     font-size: 8px;
 }
 
-table, table th, table td {
-    border: 1px solid var(--colorBorder);
-}
+table, table th, table td {border: 1px solid var(--colorBorder);}
 
 thead, th {
     color: white;
