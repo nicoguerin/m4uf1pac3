@@ -17,6 +17,7 @@ body {
     margin: 0;
     background-color: var(--colorPrincipal);
     font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.020rem;
 }
 
 header, nav {
@@ -106,7 +107,7 @@ main, .titolPagina, footer, .menuNav {text-align: center;}
 main {margin-bottom: 1rem;}
 
 .titolPagina{
-    font-size: 1.35em;
+    /* font-size: 1.35em; */
     text-transform: uppercase;
     padding: .35rem;
 }
@@ -158,6 +159,8 @@ footer {
     .col-sm-11 {width: 91.66%;}
     .col-sm-12 {width: 100%;}
 
+    .linkNav {font-size: 19px;}
+
     #iconNavMobil {width: 4vw;}
 }
 
@@ -197,14 +200,14 @@ footer {
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
 
-    header {height: 20vh;}
+    header {height: 17.5vh;}
 
     nav {
-        top: 20vh;
-        height: 7vh;
+        top: 17.5vh;
+        height: 6vh;
     }
     
-    main, footer {top: 26.5vh;}
+    main, footer {top: 23.5vh;}
 
     #iconNavMobil {display: none;}
 
