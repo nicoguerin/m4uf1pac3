@@ -15,7 +15,7 @@ section, .actors, .directors {align-items: center;}
 
 .imatgeActor, .imatgeDirector {
     width: 65vw;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
 }
 
